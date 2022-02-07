@@ -1,0 +1,18 @@
+<table class="table table-bordered text-center">
+    <thead>
+        <tr>
+            <th scope="col">flight_number</th>
+            <th scope="col">mission_name</th>
+            <th scope="col">launch_year</th>
+        </tr>
+    </thead>
+    <tbody *ngFor="let launch of launches">
+        <tr class="table-active">
+            <th><a [routerLink]="['rocket']"
+                    [queryParams]=" {flight_number: launch.flight_number, rocket_id:launch.rocket.rocket_id}">{{launch.flight_number}}</a>
+            </th>
+            <td>{{launch.mission_name}}</td>
+            <td>{{launch.launch_year}}</td>
+        </tr>
+    </tbody>
+</table>AKF

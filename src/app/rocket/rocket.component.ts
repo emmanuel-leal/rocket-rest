@@ -70,6 +70,3 @@ export class RocketComponent implements OnInit {
   }
 
 }
-
-
-pablo.grimaldi@rocketinsights.com
